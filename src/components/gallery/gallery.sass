@@ -1,0 +1,164 @@
+.gallery-wrap
+    .gallery-banner
+        width: 100%
+        height: 500px
+        background-image: url("../img/gallery-banner.png")
+        background-repeat: no-repeat
+        background-size: cover
+        position: relative
+        .arrow-left
+            position: absolute
+            width: 100%
+            height: 100%
+            &:before
+                content: ""
+                display: block
+                position: absolute
+                width: 0
+                height: 0
+                border-top: 300px solid transparent
+                border-right: 1500px solid gray
+                opacity: 0.5
+                bottom: 0
+                z-index: 99
+                right: 0
+            &:after
+                content: ""
+                display: block
+                position: absolute
+                width: 0
+                height: 0
+                border-top: 200px solid transparent
+                border-right: 1500px solid #ffff
+                bottom: 0
+                right: 0
+                z-index: 99
+    .breadcumb
+        display: flex
+        position: absolute
+        bottom: 50px
+        z-index: 999
+        right: 130px
+        ul
+            margin-left: auto
+            list-style: none
+            li
+                display: inline-block
+                a
+                    color: black
+            li:nth-child(2)
+                &:before
+                    font-family: 'font awesome\ 5 Free'
+                    content: '\f142'
+                    display: inline
+    .gallery-menu
+        padding: 1rem 0
+        border-bottom: 1px solid #EBEBEB
+        position: relative
+        ul
+            list-style: none
+            text-align: center
+            padding: 0
+            li
+                display: inline-block
+                margin-right: 20px
+                a
+                    text-transform: uppercase
+                    font-size: 16px  
+                    padding: .5rem 0
+                    color: black
+                    &:hover
+                        color: #F34039
+                        &:after
+                            position: absolute
+                            content: ""
+                            display: block
+                            width: 100px
+                            height: 3px
+                            background: #F34039
+                            bottom: -2px
+    .gallery
+        .gallery-title
+            padding: 2rem 0
+            h2 
+            text-align: center
+            position: relative
+            color: #F34039 
+            font-size: 20px
+            text-transform: uppercase
+            &:after
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                content: ""
+                display: block
+                height: 3px
+                width: 50px
+                background: #f34039
+        .list-img
+            .row
+                padding: 10px 0
+                .box-img
+                    position: relative
+                    transform: scale()
+                    img
+                        width: 100%
+                        text-align: center
+                        height: auto
+                    &:before
+                        width: 100%
+                        height: 100%
+                        content: ""
+                        background: #000000
+                        color: #ffff
+                        position: absolute
+                        display: flex
+                        text-align: center
+                        justify-content: center
+                        opacity: 0.5
+                        transition: all 0.5s ease-in-out
+                    &:after
+                        font-family: 'font awesome\ 5 free'
+                        content: "\f07c"
+                        position: absolute
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        align-content: center
+                        text-align: center
+                        left: 43%
+                        font-size: 30px
+                        color: #ffffff
+                        opacity: 0.8
+                        top: 50%
+                        transform: translateY(-50%)
+                    &.big
+                        &:after
+                            font-size: 50px
+                
+                        
+
+        .site-pagination
+            padding-bottom: 2rem
+            text-align: center
+            a
+                display: inline-flex
+                width: 40px
+                height: 40px
+                color: #6B7592
+                font-size: 16px
+                background: none
+                border: 1px solid #6B7592
+                text-align: center
+                align-items: center
+                justify-content: center
+                margin-right: 10px
+            .active
+                width: 40px
+                height: 40px
+                border: 1px solid #6B7592
+                background: #6B7592
+                color: #ffff
+                &:hover
+                    background: none
+                    color: #6B7592

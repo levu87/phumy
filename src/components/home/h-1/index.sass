@@ -1,0 +1,53 @@
+
+.home1
+    .banner-1
+        position: relative
+        height: 500px
+        background-image: url("../img/home_banner.png")
+        background-repeat: no-repeat
+        .arrow-left
+            position: absolute
+            width: 100%
+            height: 100%
+            &:before
+                content: ""
+                display: block
+                position: absolute
+                width: 0
+                height: 0
+                border-top: 300px solid transparent
+                border-right: 1500px solid gray
+                opacity: 0.5
+                bottom: 0
+                z-index: 99
+                right: 0
+            &:after
+                content: ""
+                display: block
+                position: absolute
+                width: 0
+                height: 0
+                border-top: 200px solid transparent
+                border-right: 1500px solid #ffff
+                bottom: 0
+                z-index: 99
+                right: 0
+    .breadcumb
+        position: absolute
+        right: 130px
+        bottom: 50px
+        z-index: 999
+        display: flex
+        ul
+            margin-left: auto
+            list-style: none
+            li
+                display: inline-block
+                a
+                    color: black
+            li:nth-child(2)
+                &:before
+                    content: ">"
+    // @media (max-width: 1200px)
+    //     .breadcumb
+            

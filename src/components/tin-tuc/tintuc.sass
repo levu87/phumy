@@ -1,0 +1,162 @@
+.tintuc-wrap
+    .tintuc-banner
+        height: 500px
+        background-image: url(../img/home_banner.png)
+        background-repeat: no-repeat
+        background-size: cover
+        position: relative
+        .arrow-left
+            position: absolute
+            width: 100%
+            height: 100%
+            &:before
+                content: ""
+                display: block
+                position: absolute
+                width: 0
+                height: 0
+                border-top: 300px solid transparent
+                border-right: 1500px solid gray
+                opacity: 0.5
+                bottom: 0
+                right: 0
+                z-index: 99
+            &:after
+                content: ""
+                display: block
+                position: absolute
+                width: 0
+                height: 0
+                border-top: 200px solid transparent
+                border-right: 1500px solid #ffff
+                bottom: 0
+                right: 0
+                z-index: 99
+        .breadcumb
+            display: flex
+            position: absolute
+            bottom: 50px
+            right: 150px
+            z-index: 999
+            ul
+                margin-left: auto
+                list-style: none
+                li
+                    display: inline-block
+                    a
+                        color: black
+                li:nth-child(2)
+                    &:before
+                        content: ">"
+                        display: inline
+    .tintuc-menu
+        padding: 1rem 0
+        border-bottom: 1px solid #EBEBEB
+        position: relative
+        ul
+            list-style: none
+            text-align: center
+            padding: 0
+            li
+                display: inline-block
+                margin-right: 20px
+                a
+                    text-transform: uppercase
+                    font-size: 16px  
+                    padding: .5rem 0
+                    color: black
+                    &:hover
+                        color: #F34039
+                        &:after
+                            position: absolute
+                            content: ""
+                            display: block
+                            width: 100px
+                            height: 3px
+                            background: #F34039
+                            bottom: -2px
+    .tintuc
+        .tintuc-title
+            padding: 2rem 0
+            h2 
+            text-align: center
+            position: relative
+            color: #F34039 
+            font-size: 20px
+            text-transform: uppercase
+            &:after
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                content: ""
+                display: block
+                height: 3px
+                width: 50px
+                background: #f34039
+        .top-tin
+            .content
+                padding: 1rem 0
+                date
+                    color: #BFC5D1
+                    font-size: 16px
+                    font-weight: 500
+                h4 
+                    font-size: 20px
+                p
+                    font-size: 15px
+                .btn-topt
+                    border: none
+                    background: #6B7592
+                    color: #ffff
+                    padding: .5rem 2rem
+                    font-weight: 500
+                    margin-top: 1rem
+        @media (max-width: 1200px)
+            .top-tin
+                img 
+                    width: 100%
+                .content
+                    padding: 0
+            .list-tin
+                figure 
+                    img
+                        width: 100%
+        .list-tin
+            margin-top: 1.5rem
+            .itemt
+                figure
+                    figcaption
+                        padding: 1rem 0
+                        date
+                            color: #BFC5D1
+                            font-size: 16px
+                            font-weight: 500
+                        h5 
+                            font-size: 16px
+            .site-pagination
+                padding: 2rem 0
+                text-align: center
+                a
+                    display: inline-flex
+                    width: 40px
+                    height: 40px
+                    color: #6B7592
+                    font-size: 16px
+                    background: none
+                    border: 1px solid #6B7592
+                    text-align: center
+                    align-items: center
+                    justify-content: center
+                    margin-right: 10px
+                .active
+                    width: 40px
+                    height: 40px
+                    border: 1px solid #6B7592
+                    background: #6B7592
+                    color: #ffff
+                    &:hover
+                        background: none
+                        color: #6B7592
+    
+
+

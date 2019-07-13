@@ -1,0 +1,77 @@
+footer
+    background-image: url("../img/footer_img.png")
+    color: #ffff
+    font-size: 14px
+    padding: 2rem 0 0 0
+    // position: relative
+    h3
+        font-size: 18px
+        text-transform: uppercase
+        white-space: nowrap
+        margin-bottom: 1rem        
+    ul
+        list-style: none
+        padding: 0
+        li
+            line-height: 30px
+            a
+                color: #ffff
+                text-transform: uppercase
+                &:hover
+                    color: #ed7d31
+                    transition: all 0.3s ease-in-out
+            em
+                margin-right: 1rem
+                color: #ffff
+    .box-search
+        input
+            background: #ffff
+            border: none
+            padding: .2rem 1rem
+        button
+            border: none
+            padding: 0.2rem .8rem
+            background: red
+            margin-left: -5px
+            em
+                color: #ffff
+    .footer-logo
+        margin-top: 2rem
+        img
+            margin-right: 1rem
+.copyright
+    margin-top: 1rem
+    bottom: 0
+    padding: 1rem 0
+    display: flex
+    align-items: center
+    border-top: 2px solid black
+    .social-icon
+        margin-left: auto
+        display: flex
+        a
+            width: 30px
+            height: 30px
+            border-radius: 50%
+            display: inline-block
+            background: red
+            text-align: center
+            align-items: center
+            justify-content: center
+            display: inline-flex
+            color: #ffff
+            margin-right: 5px
+@media (max-width: 1200px)
+    footer
+        h3 
+            font-size: 15px
+        ul 
+            a 
+                font-size: 12px
+        .box-search
+            input
+                width: 75%
+        .footer-logo
+            display: flex
+        
+

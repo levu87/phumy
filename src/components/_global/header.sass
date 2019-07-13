@@ -1,0 +1,167 @@
+header
+    background: #C8352E
+    position: fixed
+    z-index: 999
+    width: 100%
+    .main-wrap
+        display: flex
+        position: relative
+        .main-menu
+            margin-left: auto
+            ul
+                padding-left: 0
+                list-style: none
+                display: flex
+                height: 100%
+                align-items: center
+                li
+                    display: inline-block
+                    margin-right: 15px
+                    a
+                        text-transform: uppercase
+                        color: #ffff
+                        font-size: 16px
+                        &:hover
+                            border-bottom: 2px solid #ffff
+                            transition: all .4s ease-in-out
+        .toggle-menu
+            display: none
+            em
+                font-size: 30px
+        .logo
+            margin-bottom: -25px
+            z-index: 999
+            a
+                display: block
+                background: #ffff
+        .search
+            position: relative
+            display: flex
+            align-items: center
+            z-index: 999
+            transition: all .5s ease-in-out
+            .search-icon
+                position: relative
+                width: 30px
+                height: 30px
+                background: #ffff
+                border-radius: 50%
+                line-height: 50px
+                // padding: 5px
+                text-align: center
+                display: flex
+                align-items: center
+                justify-content: center
+                em.fas.fa-search
+                    color: #C8352E
+            .searchbox
+                position: absolute
+                top: 100%
+                right: 0
+                display: none
+                input[type="text"]
+                    border: none
+                    padding: 0 1rem
+                button
+                    right: 5px
+                    background: white
+                    border: none
+                &.active
+                    display: flex
+                    position: absolute
+                    top: 69px
+                    right: 0
+        .language
+            display: flex
+            align-items: center
+            position: relative
+            margin-left: 1rem
+            .language-active 
+                em 
+                    color: #ffff
+                    margin: 5px
+            .language-list
+                display: none
+                position: absolute
+                top: 100%
+                right: 0
+                width: 100%
+                z-index: 999
+                &.active
+                    display: block
+                    transition: all .5s ease-in-out
+                    background: #C8352E
+                    pad: 0 0 12px 10px
+                    a
+                        text-align: center
+    .bar-menu
+        position: fixed
+        transition: .6s ease-in-out all
+        top: 120px
+        right: -300px
+        width: 300px
+        height: calc(100vh-69px)
+        z-index: 9999
+        background: #C8352E
+        &.active
+            right: 0
+        ul 
+            li 
+                border-top: 1px
+                text-align: center
+        .main-menu
+            ul
+                list-style: none
+                margin-top: 1rem
+                padding: 0
+                li
+                    line-height: 50px
+                    a
+                        color: #ffff
+                        font-size: 12px
+                        text-decoration: none
+                        text-transform: uppercase
+                        padding: .5rem
+                        &:hover
+                            border-bottom: 2px solid #ffff
+                            transition: all .5s ease-in-out
+        .search-icon
+            display: none
+        .searchbox
+            display: flex
+            justify-content: center
+            input[type="text"]
+                border: none
+                padding: 0 1rem
+            button
+                right: 5px
+                background: white
+                border: none
+@media (max-width: 1025px)
+    header
+        background: #fff
+        .main-wrap
+            .logo
+                margin-bottom: 0
+                img 
+                    padding: 1rem 0
+            .main-menu
+                display: none
+            .language
+                margin-left: auto
+                .language-active
+                    em 
+                        color: #000000
+            .toggle-menu
+                display: flex!important
+                align-items: center
+                margin-left: 1rem
+                margin-left: auto
+                em 
+                    color: black
+            .bar-menu
+                &.active
+                    display: block
+                    top: 124px
+               
+            
